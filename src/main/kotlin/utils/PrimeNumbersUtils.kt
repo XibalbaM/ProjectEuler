@@ -36,4 +36,4 @@ tailrec fun findNextPrimeNumber(number: Long = primeNumbers.last()): Long =
 
 fun isNewPrime(value: Long): Boolean = primeNumbers.none { value % it == 0L }
 
-fun isPrime(value: Long): Boolean = primeNumbers.contains(value)
+fun Long.isPrime(): Boolean = primeNumbers.contains(this)

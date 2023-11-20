@@ -18,3 +18,9 @@ fun String.permutations(): List<String> {
     }
     return perms
 }
+
+fun String.repeatUntilSize(size: Int): String {
+    var result = this
+    while (result.length < size) result += this
+    return result.substring(0, size)
+}
